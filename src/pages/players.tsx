@@ -91,7 +91,7 @@ const players: React.FC<SunbirdPlayerProps> = ({ playerConfig }) => {
     loadContent();
   }, [identifier]);
 
-  return metadata ? <SunbirdPlayers playerConfig={playerConfig} /> : null;
+  return metadata ? <SunbirdPlayers player-config={playerConfig} /> : null;
 };
 
 export async function getStaticProps({ locale }: any) {
